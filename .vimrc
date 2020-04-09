@@ -4,6 +4,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+set macligatures
+set guifont=Fira\ Code:h18
+
 " Vundle
 Plugin 'VundleVim/Vundle.vim'
 
