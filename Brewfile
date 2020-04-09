@@ -14,6 +14,7 @@ brew "node"
 brew "tree"
 brew "vim", link: false
 brew "zsh"
+cask "pdf-expert"
 cask "bartender"
 cask "notion"
 cask "font-fira-code"
