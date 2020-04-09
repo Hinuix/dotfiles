@@ -1,11 +1,21 @@
+# Milton's Custom ZSH File
+# Updated on 2020, April 9th 
+# 11:58pm
+# Created In Roni Quarantine Boredom
+###############################################################################
 export ZSH="/Users/hinnant/.oh-my-zsh"
 
+#Theme
+###############################################################################
 ZSH_THEME="spaceship"
+###############################################################################
 
+#Plugins
 plugins=(git
 zsh-syntax-highlighting 
 zsh-autosuggestions
 )
+###############################################################################
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,8 +30,11 @@ autoload -U promptinit; promptinit
 
 prompt spaceship
 
+#Alias's
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+###############################################################################
 
+#Theme Setting's
 SPACESHIP_PROMPT_ORDER=(
   time
   user
@@ -309,3 +322,4 @@ SPACESHIP_EXIT_CODE_PREFIX="("
 SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOL="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
+###############################################################################
