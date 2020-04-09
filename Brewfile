@@ -14,6 +14,8 @@ brew "node"
 brew "tree"
 brew "vim", link: false
 brew "zsh"
+cask "texstudio"
+cask "visual-studio-code"
 cask "pdf-expert"
 cask "bartender"
 cask "notion"
