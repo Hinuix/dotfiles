@@ -32,6 +32,8 @@ prompt spaceship
 
 #Alias's
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias speedtest="speedtest-cli"
+alias youtube='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 ###############################################################################
 
 #Theme Setting's
