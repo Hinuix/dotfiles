@@ -6,21 +6,22 @@ call vundle#begin()
 
 set guifont=Fira\ Code:h18
 
-" Vundle
+" Vundle Plugin
+"-------------------------------
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary' " gc to comment out
+Plugin 'tpope/vim-commentary'
 Plugin 'pangloss/vim-javascript'
 Plugin 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_working_path_mode = 0 " make ctrlp work from current dir
+let g:ctrlp_working_path_mode = 0 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'szw/vim-g'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'sheerun/vim-polyglot'   " syntax highlighting in most languages
+Plugin 'sheerun/vim-polyglot'   
 Plugin 'chiel92/vim-autoformat'
 Plugin 'shime/vim-livedown'
 Plugin 'godlygeek/tabular'
@@ -30,8 +31,16 @@ Plugin 'prettier/prettier'
 Plugin 'Yggdroot/indentLine'
 Plugin 'sainnhe/gruvbox-material'
 Plugin 'mhinz/vim-signify'
-Plugin 'joshdick/onedark.vim'
+Plugin 'ayu-theme/ayu-vim'
 call vundle#end()
+
+" Theme
+" --------------------------------
+syntax on
+set termguicolors
+let ayucolor="light"
+colorscheme ayu
+
 
 filetype plugin indent on
 autocmd vimenter * if !argc() | NERDTree | endif
@@ -39,8 +48,7 @@ autocmd vimenter * if !argc() | NERDTree | endif
 highlight Comment cterm=italic gui=italic
 
 
-
-" Markdown
+"" Markdown
 " should markdown preview get shown automatically upon opening markdown buffer
 let g:livedown_autorun = 0
 
@@ -70,9 +78,11 @@ let g:indentLine_conceallevel = 2
 
 " Theme
 " --------------------------------
-syntax on
-colorscheme onedark
 
+syntax on
+set termguicolors
+let ayucolor="light"
+colorscheme ayu
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
