@@ -13,16 +13,12 @@ ZSH_THEME="spaceship"
 #Plugins
 plugins=(git
 zsh-syntax-highlighting 
-zsh-autosuggestions
 )
 ###############################################################################
 
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#FF8C00,bg=grey,bold,underline"
 
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit

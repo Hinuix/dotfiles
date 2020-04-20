@@ -11,21 +11,15 @@ set guifont=Fira\ Code:h18
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
 Plugin 'pangloss/vim-javascript'
-Plugin 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_working_path_mode = 0 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'szw/vim-g'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'sheerun/vim-polyglot'   
 Plugin 'chiel92/vim-autoformat'
 Plugin 'shime/vim-livedown'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'preservim/nerdtree'
 Plugin 'prettier/prettier'
 Plugin 'Yggdroot/indentLine'
