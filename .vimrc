@@ -25,15 +25,19 @@ Plugin 'prettier/prettier'
 Plugin 'Yggdroot/indentLine'
 Plugin 'sainnhe/gruvbox-material'
 Plugin 'mhinz/vim-signify'
-Plugin 'ayu-theme/ayu-vim'
+Plugin 'chuling/vim-equinusocio-material'
 call vundle#end()
 
 " Theme
 " --------------------------------
 syntax on
 set termguicolors
-let ayucolor="light"
-colorscheme ayu
+let g:equinusocio_material_darker = 1
+let g:equinusocio_material_hide_vertsplit = 1
+colorscheme equinusocio_material
+let g:lightline = {
+  \ 'colorscheme': 'equinusocio_material',
+  \ }
 
 
 filetype plugin indent on
@@ -70,13 +74,6 @@ let g:indentLine_bgcolor_gui = '#FF5F00'
 let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
 
-" Theme
-" --------------------------------
-
-syntax on
-set termguicolors
-let ayucolor="light"
-colorscheme ayu
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
