@@ -1,3 +1,9 @@
+" Created during the roni
+
+
+
+
+
 set nocompatible              
 filetype off                 
 
