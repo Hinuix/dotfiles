@@ -19,13 +19,12 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'sheerun/vim-polyglot'   
 Plugin 'chiel92/vim-autoformat'
 Plugin 'shime/vim-livedown'
-Plugin 'godlygeek/tabular'
 Plugin 'preservim/nerdtree'
 Plugin 'prettier/prettier'
 Plugin 'Yggdroot/indentLine'
-Plugin 'sainnhe/gruvbox-material'
 Plugin 'mhinz/vim-signify'
 Plugin 'chuling/vim-equinusocio-material'
+Plugin 'lervag/vimtex'
 call vundle#end()
 
 " Theme
