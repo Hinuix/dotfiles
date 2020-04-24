@@ -30,6 +30,10 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'mhinz/vim-signify'
 Plugin 'chuling/vim-equinusocio-material'
 Plugin 'lervag/vimtex'
+Plugin 'gi1242/vim-tex-autoclose'
+Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'SpellChecker'
+
 call vundle#end()
 
 " Theme
