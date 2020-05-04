@@ -1,6 +1,8 @@
-" Created during the roni
-
-
+" Milton's Custom ZSH File
+" Updated on 2020, April 9th 
+" 11:58pm
+" Created In Roni Quarantine Boredom
+" ##############################################################################
 
 
 
@@ -11,7 +13,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 set guifont=Fira\ Code:h18
-
+set background=dark
 " Vundle Plugin
 "-------------------------------
 Plugin 'VundleVim/Vundle.vim'
@@ -33,19 +35,25 @@ Plugin 'lervag/vimtex'
 Plugin 'gi1242/vim-tex-autoclose'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'SpellChecker'
-
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 
 " Theme
 " --------------------------------
 syntax on
 set termguicolors
-let g:equinusocio_material_darker = 1
-let g:equinusocio_material_hide_vertsplit = 1
-colorscheme equinusocio_material
-let g:lightline = {
-  \ 'colorscheme': 'equinusocio_material',
-  \ }
+
+if (has("autocmd") && !has("gui_running"))
+    augroup colors
+      autocmd!
+      let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7"}
+
+    augroup END
+  endif
+
+  colorscheme nord
 
 
 filetype plugin indent on
@@ -87,7 +95,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 
 " Set Airline bar theme
-let g:airline_theme='onedark'
+let g:airline_theme='nord'
 
 
 " Colour at column 80
@@ -104,6 +112,11 @@ set hlsearch        " Highlight whole word when searching
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...except when serach query contains a capital letter
 set autoread        " Auto load files if they change on disc
+set matchpairs+=<:>
+set showmatch
+set updatetime=300
+set clipboard=unnamed
+
 map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
 map <Leader>y "*y  )
 map <Leader><Leader> :w<CR>
