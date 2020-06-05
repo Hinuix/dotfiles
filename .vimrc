@@ -34,10 +34,12 @@ Plugin 'chuling/vim-equinusocio-material'
 Plugin 'lervag/vimtex'
 Plugin 'gi1242/vim-tex-autoclose'
 Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'SpellChecker'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'iamcco/mathjax-support-for-mkdp'
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'valloric/youcompleteme'
 call vundle#end()
 
 " Theme
@@ -63,16 +65,6 @@ highlight Comment cterm=italic gui=italic
 
 
 "" Markdown
-" should markdown preview get shown automatically upon opening markdown buffer
-let g:livedown_autorun = 0
-
-" should the browser window pop-up upon previewing
-let g:livedown_open = 1
-
-" the port on which Livedown server will run
-let g:livedown_port = 1337
-
-" the browser to use, can also be firefox, chrome or other, depending on your executable
 let g:livedown_browser = "chrome"
 
 
