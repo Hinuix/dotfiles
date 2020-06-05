@@ -44,5 +44,4 @@ mas "PCalc", id: 403504866
 mas "SnippetsLab", id: 1006087419
 mas "Speedtest", id: 1153157709
 mas "The Unarchiver", id: 425424353
-mas "Twitter", id: 1482454543
 mas "Wipr", id: 1320666476
