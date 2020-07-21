@@ -39,12 +39,12 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
 Plugin 'valloric/youcompleteme'
-Plugin 'ayu-theme/ayu-vim'
+Plugin 'arcticicestudio/nord-vim'
 call vundle#end()
 
 " Theme
 " --------------------------------
-let ayucolor="mirage"
+let ayucolor="nord"
 syntax on
 
 if (has("autocmd") && !has("gui_running"))
@@ -54,7 +54,7 @@ if (has("autocmd") && !has("gui_running"))
 
     augroup END
   endif
-  colorscheme ayu
+  colorscheme nord
 
 
 filetype plugin indent on
@@ -86,7 +86,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 
 " Set Airline bar theme
-let g:airline_theme='ayu'
+let g:airline_theme='nord'
 
 
 " Colour at column 80
