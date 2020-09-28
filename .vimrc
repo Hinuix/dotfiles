@@ -72,14 +72,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd StdinReadPre * let s:std_in=1
 
 
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_setColors = 0
-let g:indentLine_color_tty_light = 7 " (default: 4)
-let g:indentLine_color_dark = 1 " (default: 2)
-let g:indentLine_bgcolor_term = 202
-let g:indentLine_bgcolor_gui = '#FF5F00'
-let g:indentLine_concealcursor = 'inc'
-let g:indentLine_conceallevel = 2
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_setColors = 0
+"let g:indentLine_color_tty_light = 7 " (default: 4)
+"let g:indentLine_color_dark = 1 " (default: 2)
+"let g:indentLine_bgcolor_term = 202
+"let g:indentLine_bgcolor_gui = '#FF5F00'
+"let g:indentLine_concealcursor = 'inc'
+"let g:indentLine_conceallevel = 2
 
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
