@@ -29,6 +29,7 @@ cask "pdf-expert"
 cask "spotify"
 cask "transmission"
 cask "visual-studio-code"
+cask "iterm2-nightly"
 mas "1Password 7", id: 1333542190
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
