@@ -18,11 +18,11 @@ brew "tree"
 brew "vim"
 brew "youtube-dl"
 brew "zsh"
+brew install zsh-syntax-highlighting
 cask "cyberduck"
 cask "flux"
 cask "font-fira-code"
 cask "font-inconsolata"
-cask "google-chrome"
 cask "java"
 cask "mactex"
 cask "pdf-expert"
@@ -31,10 +31,7 @@ cask "transmission"
 cask "visual-studio-code"
 cask "iterm2-nightly"
 mas "1Password 7", id: 1333542190
-mas "Day One", id: 1055511498
-mas "Deliveries", id: 924726344
 mas "Final Cut Pro", id: 424389933
-mas "GoodTask", id: 1143437985
 mas "Keynote", id: 409183694
 mas "Logic Pro X", id: 634148309
 mas "NordVPN IKE", id: 1116599239

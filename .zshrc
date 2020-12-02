@@ -1,9 +1,15 @@
-# Milton's Custom ZSH File
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/hinuix/.oh-my-zsh"
+
+## Milton's Custom ZSH File
 # Updated on 2020, April 9th 
 # 11:58pm
 # Created In Roni Quarantine Boredom
 ###############################################################################
-export ZSH="/Users/hinnant/.oh-my-zsh"
+export ZSH="/Users/hinuix/.oh-my-zsh"
 
 #Theme
 ###############################################################################
@@ -17,8 +23,6 @@ zsh-syntax-highlighting
 ###############################################################################
 
 source $ZSH/oh-my-zsh.sh
-
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
@@ -322,4 +326,6 @@ SPACESHIP_EXIT_CODE_PREFIX="("
 SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOL="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
-###############################################################################
+
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#################################################################################
