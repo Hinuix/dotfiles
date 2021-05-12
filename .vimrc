@@ -38,7 +38,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 Plugin 'arcticicestudio/nord-vim'
 call vundle#end()
 
