@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/hinuix/.oh-my-zsh"
+export ZSH="/Users/hinnant/.oh-my-zsh"
 
 ## Milton's Custom ZSH File
 # Updated on 2020, April 9th 
