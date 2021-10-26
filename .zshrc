@@ -9,7 +9,7 @@ export ZSH="/Users/hinnant/.oh-my-zsh"
 # 11:58pm
 # Created In Roni Quarantine Boredom
 ###############################################################################
-export ZSH="/Users/hinuix/.oh-my-zsh"
+export ZSH="/Users/hinnant/.oh-my-zsh"
 
 #Theme
 ###############################################################################
