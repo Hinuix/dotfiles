@@ -17,12 +17,9 @@ ZSH_THEME="spaceship"
 ###############################################################################
 
 #Plugins
-plugins=(git
-zsh-syntax-highlighting 
-)
+
 ###############################################################################
 
-source $ZSH/oh-my-zsh.sh
 
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
@@ -327,5 +324,5 @@ SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOL="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
 
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #################################################################################
+source /Users/hinnant/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
