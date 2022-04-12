@@ -64,7 +64,12 @@ highlight Comment cterm=italic gui=italic
 
 
 "" Markdown
-let g:livedown_browser = "chrome"
+let g:livedown_autorun = 0
+let g:livedown_open = 1
+let g:livedown_port = 1337
+let g:livedown_browser = "brave"
+
+
 
 
 map <C-n> :NERDTreeToggle<CR>
