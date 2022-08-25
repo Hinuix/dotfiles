@@ -37,9 +37,9 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'iamcco/mathjax-support-for-mkdp'
-Plugin 'iamcco/markdown-preview.vim'
 "Plugin 'valloric/youcompleteme'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'iamcco/markdown-preview.nvim'
 call vundle#end()
 
 " Theme
@@ -64,13 +64,37 @@ highlight Comment cterm=italic gui=italic
 
 
 "" Markdown
-let g:livedown_autorun = 0
-let g:livedown_open = 1
-let g:livedown_port = 1337
-let g:livedown_browser = "brave"
 
-
-
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_open_ip = ''
+let g:mkdp_browser = ''
+let g:mkdp_echo_preview_url = 0
+let g:mkdp_browserfunc = ''
+let g:mkdp_preview_options = {
+    \ 'mkit': {},
+    \ 'katex': {},
+    \ 'uml': {},
+    \ 'maid': {},
+    \ 'disable_sync_scroll': 0,
+    \ 'sync_scroll_type': 'middle',
+    \ 'hide_yaml_meta': 1,
+    \ 'sequence_diagrams': {},
+    \ 'flowchart_diagrams': {},
+    \ 'content_editable': v:false,
+    \ 'disable_filename': 0,
+    \ 'toc': {}
+    \ }
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_port = ''
+let g:mkdp_page_title = '「${name}」'
+let g:mkdp_filetypes = ['markdown']
+let g:mkdp_theme = 'dark'
+""
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
