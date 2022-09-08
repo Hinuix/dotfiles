@@ -40,6 +40,7 @@ Plugin 'iamcco/mathjax-support-for-mkdp'
 "Plugin 'valloric/youcompleteme'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 
 " Theme
