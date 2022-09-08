@@ -33,6 +33,7 @@ cask "pdf-expert"
 cask "rectangle"
 cask "texstudio"
 cask "visual-studio-code"
+cask "macdown"
 mas "Amphetamine", id: 937984704
 mas "Auto HD FPS for YouTube", id: 1546729687
 mas "GoodNotes", id: 1444383602
