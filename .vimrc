@@ -101,17 +101,6 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd StdinReadPre * let s:std_in=1
 
-
-"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-"let g:indentLine_setColors = 0
-"let g:indentLine_color_tty_light = 7 " (default: 4)
-"let g:indentLine_color_dark = 1 " (default: 2)
-"let g:indentLine_bgcolor_term = 202
-"let g:indentLine_bgcolor_gui = '#FF5F00'
-"let g:indentLine_concealcursor = 'inc'
-"let g:indentLine_conceallevel = 2
-
-
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
 
@@ -128,7 +117,6 @@ let g:mapleader = " " " Set leader to spacebar
 set spelllang=en_gb
 set backspace=indent,eol,start " Bring backspace to life
 set number          " Line numbers
-set relativenumber  " Relative line numbers
 set hlsearch        " Highlight whole word when searching
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...except when serach query contains a capital letter
