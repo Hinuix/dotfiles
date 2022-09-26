@@ -8,6 +8,7 @@
 
 set nocompatible              
 filetype off                 
+setlocal spell
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -37,7 +38,6 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'iamcco/mathjax-support-for-mkdp'
-"Plugin 'valloric/youcompleteme'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'sheerun/vim-polyglot'
@@ -103,10 +103,8 @@ autocmd StdinReadPre * let s:std_in=1
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-
 " Set Airline bar theme
 let g:airline_theme='nord'
-
 
 " Colour at column 80
 set colorcolumn=80
@@ -183,9 +181,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-
 set nojoinspaces
-
 
 " Disable swap files
 set noswapfile
@@ -198,3 +194,8 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+"Cursor Icon
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q""]"
+
