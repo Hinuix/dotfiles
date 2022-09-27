@@ -4,8 +4,6 @@
 " Created In Roni Quarantine Boredom
 " ##############################################################################
 
-
-
 set nocompatible              
 filetype off                 
 setlocal spell
@@ -20,6 +18,7 @@ set background=dark
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
@@ -69,7 +68,7 @@ colorscheme nord
 
 
 filetype plugin indent on
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 
 highlight Comment cterm=italic gui=italic
 
@@ -105,6 +104,23 @@ let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 let g:mkdp_theme = 'dark'
 ""
+let s:header =[
+\ '',
+\ '    __  ___                         __ ',
+\ '   / / / (_)___  ____  ____ _____  / /_',
+\ '  / /_/ / / __ \/ __ \/ __ `/ __ \/ __/',
+\ ' / __  / / / / / / / / /_/ / / / / /_  ',
+\ '/_/ /_/_/_/ /_/_/ /_/\__,_/_/ /_/\__/  ',
+\ '',
+\]
+function! s:center(lines) abort
+  let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
+  let centered_lines = map(copy(a:lines),
+        \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+  return centered_lines
+endfunction
+
+let g:startify_custom_header = s:center(s:header)
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
