@@ -2,61 +2,24 @@
 " Updated on 2020, April 9th 
 " 11:58pm
 " Created In Roni Quarantine Boredom
-“ Edited September 27th, 2022
 " ##############################################################################
 
 
-" Theme
-" ##############################################################################
-let ayucolor="nord"
-colorscheme nord
-" ##############################################################################
 
-“Set’s
-" ##############################################################################
-syntax on
 set nocompatible              
 filetype off                 
 setlocal spell
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
 set guifont=Fira\ Code:h18
 set background=dark
-set rtp+=~/.vim/bundle/Vundle.vim
-set spelllang=en_gb
-set backspace=indent,eol,start " Bring backspace to life
-set number          " Line numbers
-set hlsearch        " Highlight whole word when searching
-set ignorecase      " Ignore case when searching...
-set smartcase       " ...except when serach query contains a capital letter
-set autoread        " Auto load files if they change on disc
-set matchpairs+=<:>
-set showmatch
-set updatetime=300
-set clipboard=unnamed
-set mouse=a
-set linebreak
-set nolist
-set mouse=
-set ttymouse=
-set noswapfile
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set nojoinspaces
-set splitbelow
-set splitright
-set complete+=kspell
-set colorcolumn=80
-" ##############################################################################
-
-"Cursor Icon
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q""]"
-
-“Plugins Vundle 
-" ##############################################################################
-call vundle#begin()
+" Vundle Plugin
+"-------------------------------
 Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
@@ -79,7 +42,11 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'sheerun/vim-polyglot'
 call vundle#end()
-" ##############################################################################
+
+" Theme
+" --------------------------------
+let ayucolor="nord"
+syntax on
 
 if (has("autocmd") && !has("gui_running"))
     augroup colors
@@ -98,10 +65,14 @@ let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_underline = 1
 
+colorscheme nord
+
+
 filetype plugin indent on
 autocmd vimenter * if !argc() | NERDTree | endif
 
 highlight Comment cterm=italic gui=italic
+
 
 "" Markdown
 let g:mkdp_auto_start = 1
@@ -144,10 +115,29 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " Set Airline bar theme
 let g:airline_theme='nord'
 
+" Colour at column 80
+set colorcolumn=80
 
 " Maps
 " --------------------------------
 let g:mapleader = " " " Set leader to spacebar 
+set spelllang=en_gb
+set backspace=indent,eol,start " Bring backspace to life
+set number          " Line numbers
+set hlsearch        " Highlight whole word when searching
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...except when serach query contains a capital letter
+set autoread        " Auto load files if they change on disc
+set matchpairs+=<:>
+set showmatch
+set updatetime=300
+set clipboard=unnamed
+set mouse=a
+set linebreak
+set nolist
+set mouse=
+set ttymouse=
+
 map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
 map <Leader>y "*y  )
 map <Leader><Leader> :w<CR>
@@ -182,6 +172,10 @@ nnoremap ˙ gT
 nnoremap ¬ gt
 nnoremap T :tabnew<cr>
 
+" Open new splits to right and bottom 
+set splitbelow
+set splitright
+
 "Tab completion
 set wildmenu
 set wildmode=list:longest,list:full
@@ -196,9 +190,25 @@ function! InsertTabWrapper()
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Tab size
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set nojoinspaces
+
+" Disable swap files
+set noswapfile
+
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
 
 " Disable arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+"Cursor Icon
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q""]"
