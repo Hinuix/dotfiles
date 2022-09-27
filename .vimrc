@@ -55,7 +55,17 @@ if (has("autocmd") && !has("gui_running"))
 
     augroup END
   endif
-  colorscheme nord
+
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_status_lines = 1
+let g:nord_bold_vertical_split_line = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_bold = 0
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+
+colorscheme nord
 
 
 filetype plugin indent on
@@ -65,7 +75,6 @@ highlight Comment cterm=italic gui=italic
 
 
 "" Markdown
-
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
@@ -123,6 +132,11 @@ set matchpairs+=<:>
 set showmatch
 set updatetime=300
 set clipboard=unnamed
+set mouse=a
+set linebreak
+set nolist
+set mouse=
+set ttymouse=
 
 map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
 map <Leader>y "*y  )
