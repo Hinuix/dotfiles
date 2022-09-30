@@ -158,9 +158,6 @@ map <Leader>p :set paste<CR><esc>"*]p:set nopaste<cr>
 map <Leader>y "*y  )
 map <Leader><Leader> :w<CR>
 inoremap jj <ESC>:w<CR>
-     
-" Pasting - indent last pasted
-nnoremap gz '[='] 
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><ESC> :noh<cr>
@@ -173,9 +170,6 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
-
-" Open current file in a new vertical split with '='
-nnoremap = :vsplit<cr>
 
 " Easy split navigation
 map <C-j> <C-w>j
