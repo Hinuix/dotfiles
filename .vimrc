@@ -140,6 +140,7 @@ let g:mapleader = " " " Set leader to spacebar
 set spelllang=en_gb
 set backspace=indent,eol,start " Bring backspace to life
 set number          " Line numbers
+set relativenumber
 set hlsearch        " Highlight whole word when searching
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...except when serach query contains a capital letter
