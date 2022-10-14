@@ -66,7 +66,6 @@ let g:nord_underline = 1
 
 colorscheme nord
 
-
 filetype plugin indent on
 "autocmd vimenter * if !argc() | NERDTree | endif
 
