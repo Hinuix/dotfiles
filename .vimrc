@@ -71,7 +71,6 @@ filetype plugin indent on
 
 highlight Comment cterm=italic gui=italic
 
-
 "" Markdown
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
