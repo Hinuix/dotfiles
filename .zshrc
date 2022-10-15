@@ -328,4 +328,8 @@ SPACESHIP_EXIT_CODE_SYMBOL="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
 
 #################################################################################
+
+#GitHub
+export GPG_TTY=$(tty)
+
 source /Users/hinnant/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
