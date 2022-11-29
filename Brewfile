@@ -35,10 +35,7 @@ cask "texstudio"
 cask "visual-studio-code"
 cask "macdown"
 mas "Amphetamine", id: 937984704
-mas "Auto HD FPS for YouTube", id: 1546729687
-mas "GoodNotes", id: 1444383602
 mas "Notability", id: 360593530
-mas "Outline", id: 604802021
 mas "Termius", id: 1176074088
 mas "The Unarchiver", id: 425424353
 mas "Wipr", id: 1320666476
