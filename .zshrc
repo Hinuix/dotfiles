@@ -333,3 +333,6 @@ SPACESHIP_EXIT_CODE_COLOR="red"
 export GPG_TTY=$(tty)
 
 source /Users/hinnant/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.2 # run chruby to see actual version
