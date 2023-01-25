@@ -20,7 +20,6 @@ ZSH_THEME="spaceship"
 
 ###############################################################################
 
-
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 
@@ -36,7 +35,11 @@ alias youtubemp3='youtube-dl -f "bestaudio" -o "~/Downloads/%(uploader)s/%(title
 alias youtubemp3p='youtube-dl -f "bestaudio" -o "~/Downloads/%(uploader)s/%(playlist)s/%(title)s.%(ext)s" -x --audio-format mp3 --embed-thumbnail'
 alias silo='ssh hinnant@burrow.luddy.indiana.edu'
 alias zeus='ssh Milton@192.168.4.78'
+alias tmuxnew='tmux new -s'
+alias tmuxback='tmux attach-session -t'
+alias tmuxkill='tmux kill-session -t'
 ###############################################################################
+
 
 #Theme Setting's
 SPACESHIP_PROMPT_ORDER=(
