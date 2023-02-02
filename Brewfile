@@ -31,7 +31,6 @@ cask "mactex"
 cask "nordvpn"
 cask "pdf-expert"
 cask "rectangle"
-cask "texstudio"
 cask "visual-studio-code"
 cask "macdown"
 mas "Amphetamine", id: 937984704
