@@ -34,6 +34,7 @@ cask "rectangle"
 cask "visual-studio-code"
 cask "macdown"
 cask "scroll-reverser"
+cask "notion"
 mas "Amphetamine", id: 937984704
 mas "Notability", id: 360593530
 mas "Termius", id: 1176074088
