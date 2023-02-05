@@ -23,8 +23,10 @@ ZSH_THEME="spaceship"
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 
+fpath+=( /spaceship/to/spaceship )
+autoload -Uz promptinit
+promptinit
 
-prompt spaceship
 
 #Alias's
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
@@ -63,19 +65,16 @@ SPACESHIP_PROMPT_ORDER=(
   aws
   venv
   conda
-  pyenv
   dotnet
-  ember
   battery
   exec_time
   line_sep
-  vi_mode
   jobs
   exit_code
   char
 )
 
-SPACESHIP_KUBECONTEXT_SHOW="${SPACESHIP_KUBECONTEXT_SHOW:=false}"
+SPACESHIP_KUBECTL_SHOW="${SPACESHIP_KUBECTL_SHOW:=false}"
 
 
 # PROMPT
@@ -270,12 +269,12 @@ SPACESHIP_CONDA_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
 SPACESHIP_CONDA_SYMBOL="🅒 "
 SPACESHIP_CONDA_COLOR="blue"
 
-# PYENV
-SPACESHIP_PYENV_SHOW=true
-SPACESHIP_PYENV_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
-SPACESHIP_PYENV_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
-SPACESHIP_PYENV_SYMBOL="🐍 "
-SPACESHIP_PYENV_COLOR="yellow"
+# PYTHON
+SPACESHIP_PYTHON_SHOW=true
+SPACESHIP_PYTHON_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
+SPACESHIP_PYTHON_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_PYTHON_SYMBOL="🐍 "
+SPACESHIP_PYTHON_COLOR="yellow"
 
 # DOTNET
 SPACESHIP_DOTNET_SHOW=true
@@ -291,12 +290,12 @@ SPACESHIP_EMBER_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
 SPACESHIP_EMBER_SYMBOL="🐹 "
 SPACESHIP_EMBER_COLOR="210"
 
-# KUBECONTEXT
-SPACESHIP_KUBECONTEXT_SHOW=true
-SPACESHIP_KUBECONTEXT_PREFIX="at "
-SPACESHIP_KUBECONTEXT_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
-SPACESHIP_KUBECONTEXT_SYMBOL="☸️ "
-SPACESHIP_KUBECONTEXT_COLOR="cyan"
+# KUBECTL
+SPACESHIP_KUBECTL_SHOW=true
+SPACESHIP_KUBECTL_PREFIX="at "
+SPACESHIP_KUBECTL_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_KUBECTL_SYMBOL="☸️ "
+SPACESHIP_KUBECTL_COLOR="cyan"
 
 # BATTERY
 SPACESHIP_BATTERY_SHOW=true
@@ -336,6 +335,7 @@ SPACESHIP_EXIT_CODE_COLOR="red"
 export GPG_TTY=$(tty)
 
 source /Users/hinnant/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.2 # run chruby to see actual version
+#source /usr/local/opt/chruby/share/chruby/chruby.sh
+#source /usr/local/opt/chruby/share/chruby/auto.sh
+#chruby ruby-3.1.2 # run chruby to see actual version
+source /opt/homebrew/opt/spaceship/spaceship.zsh
