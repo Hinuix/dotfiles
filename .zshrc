@@ -27,7 +27,6 @@ fpath+=( /spaceship/to/spaceship )
 autoload -Uz promptinit
 promptinit
 
-
 #Alias's
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias speedtest="speedtest-cli"
@@ -41,7 +40,6 @@ alias tmuxnew='tmux new -s'
 alias tmuxback='tmux attach-session -t'
 alias tmuxkill='tmux kill-session -t'
 ###############################################################################
-
 
 #Theme Setting's
 SPACESHIP_PROMPT_ORDER=(
