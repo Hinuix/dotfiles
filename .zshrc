@@ -19,6 +19,7 @@ ZSH_THEME="spaceship"
 #Plugins
 
 ###############################################################################
+plugins=(zsh-autosuggestions)
 
 autoload -U compinit && compinit
 autoload -U promptinit; promptinit
@@ -39,6 +40,9 @@ alias zeus='ssh Milton@192.168.4.78'
 alias tmuxnew='tmux new -s'
 alias tmuxback='tmux attach-session -t'
 alias tmuxkill='tmux kill-session -t'
+# Security
+alias plook='exiftool -n'
+alias pclean='exiftool -all='
 ###############################################################################
 
 #Theme Setting's
