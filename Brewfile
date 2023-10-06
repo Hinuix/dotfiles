@@ -20,7 +20,6 @@ brew "tree"
 brew "vim"
 brew "youtube-dl"
 brew "zsh"
-cask "appzapper"
 cask "bartender"
 cask "cyberduck"
 cask "flux"
@@ -36,7 +35,4 @@ cask "macdown"
 cask "scroll-reverser"
 cask "notion"
 mas "Amphetamine", id: 937984704
-mas "Notability", id: 360593530
 mas "Termius", id: 1176074088
-mas "The Unarchiver", id: 425424353
-mas "Wipr", id: 1320666476
